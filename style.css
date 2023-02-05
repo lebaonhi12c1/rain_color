@@ -1,0 +1,35 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.root{
+    background-color: #000;
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.rain{
+    position: absolute;
+    height: 200px;
+    width: 5px;
+    background-color: #fff;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    top: -200px;
+    animation: rainmove linear infinite;
+}
+@keyframes rainmove {
+    0%{
+        top: -200px;
+    }
+    100%{
+        top: 100%;
+    }
+}
